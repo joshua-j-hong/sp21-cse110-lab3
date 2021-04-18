@@ -6,6 +6,14 @@
         <meta name="keywords" content="Journal, project, CSE 110">
         <meta name="author" content="Joshua Hong">
         <link rel="icon" href="images/pog.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+        <style>
+            fieldset {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -15,13 +23,15 @@
                 <a href="#april11"><b>April 11</b></a> |
                 <a href="https://joshua-j-hong.github.io/User-Page/"><b>User Page</b></a>
             </nav>
-            <h1 id="top">Introduction</h1>
-            <p>Hi! I’m Joshua, a 2nd year Cognitive Science major and Computer Science minor 
-            at the University of California, San Diego. I’m interested in research concerning 
-            computer vision, NLP, and aspects of cognition.</p>
+            <div class="introduction">
+                <h1 id="top">Introduction</h1>
+                <p>Hi! I’m Joshua, a 2nd year Cognitive Science major and Computer Science minor 
+                at the University of California, San Diego. I’m interested in research concerning 
+                computer vision, NLP, and aspects of cognition.</p>
+            </div>
         </header>
         <main>
-            <div>
+            <div class="introduction">
                 Here's some <em>music</em> to accompany the journal entries!
                 <br>
                 <audio controls>
@@ -38,7 +48,7 @@
 
             <section id="april9">
                 <h2>April 9</h2>
-                <img src="images/substitutions_2_2x.png" alt="XKCD 1625" height="600">
+                <img src="images/substitutions_2_2x.png" alt="XKCD 1625">
                 <h3>Highlights</h3>
                 <ul>
                     <li>End of the week!</li>
@@ -59,7 +69,7 @@
             </section>
             <section id="april10">
                 <h2>April 10</h2>
-                <img src="images/campfire_habitable_zone_2x.png" alt="XKCD 2336" height="600">
+                <img src="images/campfire_habitable_zone_2x.png" alt="XKCD 2336">
                 <h3>Highlights</h3>
                 <ul>
                     <li>Finished student org work!</li>
@@ -82,7 +92,7 @@
             </section>
             <section id="april11">
                 <h2>April 11</h2>
-                <img src="images/reports_2x.png" alt="XKCD 1219" height="600">
+                <img src="images/reports_2x.png" alt="XKCD 1219">
                 <h3>Highlights</h3>
                 <ul>
                     <li>Ate some really good noodles for lunch</li>
@@ -115,7 +125,8 @@
                 <hr>
             </section>
 
-            <div>
+            <div id = "form_and_button">
+                <h3>Fill out this form to add more journal entries!</h3>
                 <form id="journal_form">
                     <fieldset>
                         <legend>Form Info</legend>
@@ -170,9 +181,9 @@
 
         </main>
         <footer>
-            <p>Author: Joshua Hong</p>
+            <p class = "author">Author: Joshua Hong</p>
             <p><a href="mailto:jjhong@ucsd.edu">jjhong@ucsd.edu</a></p>
-            <a href="#top"><b>Back to Top</b></a>
+            <p><a href="#top"><b>Back to Top</b></a></p>
         </footer>
     </body>
 </html>
