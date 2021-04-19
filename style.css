@@ -129,6 +129,6 @@ button:active {
 
 @media (max-width: 50rem) {
     img {
-        width: 50vw;
+        width: 20vw;
     }
 }
